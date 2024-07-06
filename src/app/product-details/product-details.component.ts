@@ -62,5 +62,7 @@ export class ProductDetailsComponent {
   removeFromCart(id:number){
     this.product.localRemoveFromCart(id);
     this.itemInCart=false;
+    console.log('hii shubham');
+    
   }
 }

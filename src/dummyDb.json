@@ -1,0 +1,199 @@
+{
+  "seller": [
+    {
+      "id": "1",
+      "name": "shubham",
+      "email": "shub@gmal.com",
+      "password": "abc@123"
+    },
+    {
+      "id": "74d7",
+      "name": "ram",
+      "email": "ram@gmal.com",
+      "password": "ram@123"
+    },
+    {
+      "id": "8802",
+      "name": "peter",
+      "password": "peter@123",
+      "email": "peter@gmail.com"
+    },
+    {
+      "id": "1eb1",
+      "name": "kl",
+      "password": "",
+      "email": "shubham@pixelimage.in"
+    },
+    {
+      "id": "0292",
+      "name": "",
+      "password": "['']",
+      "email": "shubham@pixelimage.in"
+    },
+    {
+      "id": "4171",
+      "name": "shubham yadav",
+      "password": "Shub@pixel1311",
+      "email": "shubham@pixelimage.in"
+    }
+  ],
+  "products": [
+    {
+      "Name": "iphone15",
+      "Price": "492",
+      "Color": "black",
+      "Category": "phone",
+      "Description": "8gb iphone 15",
+      "Image": "https://www.apple.com/newsroom/images/2023/09/apple-debuts-iphone-15-and-iphone-15-plus/tile/Apple-iPhone-15-lineup-hero-230912.jpg.news_app_ed.jpg",
+      "id": "c3cb"
+    },
+    {
+      "Name": "samsung s7",
+      "Price": "60000",
+      "Color": "black",
+      "Category": "phone",
+      "Description": "12 gb ram ",
+      "Image": "https://www.appleservicecenternehruplace.in/wp-content/uploads/2018/08/sams-1.jpg",
+      "id": "7f22"
+    },
+    {
+      "Name": "Leria fashion westen dress",
+      "Price": "399",
+      "Color": "Pista",
+      "Category": "cloths",
+      "Description": "new best",
+      "Image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRXs516rSqLdoCYT-4PoqwptgdHHULbB7rQ7WaZb9aPcxhlMXOJEic_CExJEv_dTWUTnk0XdO3LQ1BR-rjUNbJY8sopGUjJKS_n2pNM2AHcl4McTPcVEqZg_Q",
+      "id": "69be"
+    },
+    {
+      "id": "cec5",
+      "Name": "Sassafras Women Two Piece",
+      "Price": "799",
+      "Color": "Purple",
+      "Category": "cloths",
+      "Description": "Sassafras Women Two Piece Dress Purple Dress",
+      "Image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQB2Mcw_YPAlal44AqbVKwLrX-_6z3ahO0yBC8vaMBvPHPgJ7On_ylyXuOZZpLCLb88SoFWf9fdgR_3ZiM99SnWAPYykcx-bIza_Y-bHkU"
+    },
+    {
+      "id": "8128",
+      "Name": "Rustorange Women Maroon",
+      "Price": "899",
+      "Color": "mix",
+      "Category": "cloths",
+      "Description": "Rustorange Women Maroon & Rust Polka & Jaal Festive Lehenga",
+      "Image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcREimkIVt4gWJ7flTO3EO04As9-IOb_h6_g858sOHhK-6jBVeIwMroigBs8nZE0kdBQKtRdQxHLcfApqNSe2webOIM9gIXVBpOE94Z69mqfqdcilGgeEAag"
+    },
+    {
+      "Name": "Casual Shirt",
+      "Price": "599",
+      "Color": "black and white",
+      "Category": "cloths",
+      "Description": "Men Navy Blue & Off White Slim Fit Printed Casual Shirt by Myntra",
+      "Image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSOIhkG_HSy_BEZutdfroXqFQJ93_50B65qx16qfAjTr5RGQhnZ8E84MIeO4ElQK7II1PweSbjY8ByhXNPXzlGxW9jHOQ7xTlWm8kftgbb_",
+      "id": "cb78"
+    },
+    {
+      "id": "6d1f",
+      "Name": "checks Shirt",
+      "Price": "599",
+      "Color": "red",
+      "Category": "cloths",
+      "Description": "Men Navy Blue & Off White Slim Fit Printed Casual Shirt by Myntra",
+      "Image": "https://imgmediagumlet.lbb.in/media/2023/05/6474602016cbc35fdad2cd7f_1685348384396.jpg?fm=webp&w=480&h=480&dpr=1"
+    },
+    {
+      "id": "7fd0",
+      "Name": "Cargo Denim Jeans",
+      "Price": "999",
+      "Color": "Light Blue",
+      "Category": "cloths",
+      "Description": "Light Blue Baggy-Fit Cargo Denim Jeans",
+      "Image": "https://www.tistabene.com/cdn/shop/files/MJS-0241C.jpg?v=1714375098&width=5000"
+    },
+    {
+      "id": "afa7",
+      "Name": "Sneakers with Anti Slip Sole ",
+      "Price": "1299",
+      "Color": "black",
+      "Category": "shoes",
+      "Description": "Bacca Bucci CAPER High Top Men Sneakers with Anti Slip Sole & Breathable Upper",
+      "Image": "https://baccabucci.com/cdn/shop/products/MG_4627_700x.jpg?v=1618878209"
+    }
+  ],
+  "users": [
+    {
+      "id": "d050",
+      "Name": "scxsc",
+      "Email": "ascsdc",
+      "Password": "scsdc"
+    },
+    {
+      "id": "f40d",
+      "Name": "abc",
+      "Email": "abc@gmail.com",
+      "Password": "12345"
+    },
+    {
+      "id": "db5f",
+      "Name": "asf",
+      "Email": "asdf@gamil.com",
+      "Password": "54321"
+    },
+    {
+      "id": "8985",
+      "Name": "axc",
+      "Email": "ass",
+      "Password": "ass"
+    }
+  ],
+  "cartData": [
+    {
+      "id": "43cf",
+      "Name": "Leria fashion westen dress",
+      "Price": "399",
+      "Color": "Pista",
+      "Category": "cloths",
+      "Description": "new best",
+      "Image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRXs516rSqLdoCYT-4PoqwptgdHHULbB7rQ7WaZb9aPcxhlMXOJEic_CExJEv_dTWUTnk0XdO3LQ1BR-rjUNbJY8sopGUjJKS_n2pNM2AHcl4McTPcVEqZg_Q",
+      "quantity": 1,
+      "productId": "69be",
+      "userid": "f40d"
+    },
+    {
+      "id": "8650",
+      "Name": "Sassafras Women Two Piece",
+      "Price": "799",
+      "Color": "Purple",
+      "Category": "cloths",
+      "Description": "Sassafras Women Two Piece Dress Purple Dress",
+      "Image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQB2Mcw_YPAlal44AqbVKwLrX-_6z3ahO0yBC8vaMBvPHPgJ7On_ylyXuOZZpLCLb88SoFWf9fdgR_3ZiM99SnWAPYykcx-bIza_Y-bHkU",
+      "quantity": 1,
+      "productId": "cec5",
+      "userid": "f40d"
+    },
+    {
+      "id": "fffc",
+      "Name": "Leria fashion westen dress",
+      "Price": "399",
+      "Color": "Pista",
+      "Category": "cloths",
+      "Description": "new best",
+      "Image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRXs516rSqLdoCYT-4PoqwptgdHHULbB7rQ7WaZb9aPcxhlMXOJEic_CExJEv_dTWUTnk0XdO3LQ1BR-rjUNbJY8sopGUjJKS_n2pNM2AHcl4McTPcVEqZg_Q",
+      "quantity": 1,
+      "userid": "f40d",
+      "productId": "69be"
+    },
+    {
+      "id": "4fa5",
+      "Name": "Leria fashion westen dress",
+      "Price": "399",
+      "Color": "Pista",
+      "Category": "cloths",
+      "Description": "new best",
+      "Image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRXs516rSqLdoCYT-4PoqwptgdHHULbB7rQ7WaZb9aPcxhlMXOJEic_CExJEv_dTWUTnk0XdO3LQ1BR-rjUNbJY8sopGUjJKS_n2pNM2AHcl4McTPcVEqZg_Q",
+      "quantity": 1,
+      "userid": "f40d",
+      "productId": "69be"
+    }
+  ]
+}

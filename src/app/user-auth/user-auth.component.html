@@ -1,0 +1,24 @@
+<div class="user-auth">
+    <div class="user-signup" *ngIf="!showLogin">
+        <h1>User Sign-up</h1>
+        <form #userSignUp="ngForm" class="common-form" (ngSubmit)="signUp(userSignUp.value)" >
+            <input type="txet" class="form-input" name="Name" placeholder="Enter user name" ngModel>
+            <input type="txet" class="form-input" name="Email" placeholder="Enter User Email" ngModel>
+            <input type="txet" class="form-input" name="Password" placeholder="Enter Password" ngModel>
+            <button class="form-button">Sign Up</button>
+            <a (click)="openLogin()" class="auth-toggle-link">Already Have Account? Click to login</a>
+        </form>
+    </div>
+    <div class="user-login" *ngIf="showLogin">
+        <h1>User Login</h1>
+        <form #userLogin="ngForm" class="common-form" (ngSubmit)="login(userLogin.value)" >
+            <p class="error-p">{{InvalidCredentialError}}</p>
+            <input type="txet" class="form-input" name="Email" placeholder="Enter User Email" ngModel #email="ngModel" required email/>
+            <p class="invalid-input" ><span *ngIf="email.invalid && email.touched">Enter vaild email</span></p>
+            <input type="txet" class="form-input" name="Password" placeholder="Enter Password" ngModel #password="ngModel" maxlength="10" minlength="3" required/>
+            <p class="invalid-input" ><span *ngIf="password.invalid && password.touched">Enter vaild password</span></p>
+            <button [disabled]="userLogin.invalid" class="form-button">Login</button>
+            <a (click)="openSignup()" class="auth-toggle-link">Not Have Account? Click to signup</a>
+        </form>
+    </div>
+</div>

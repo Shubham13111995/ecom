@@ -1,0 +1,14 @@
+<div class="update-product">
+    <h1>Update Product</h1>
+    <p class="toster-success">{{notificationMsg}}</p>
+    <form #updateProduct="ngForm"  class="common-form">
+        <input type="text" class="form-input" name="Name"  ngModel="{{productdata?.Name}}" placeholder="Enter Product Name">
+        <input type="text" class="form-input" ngModel="{{productdata?.Price}}" name="Price" placeholder="Enter Product Price">
+        <input type="text" class="form-input" ngModel="{{productdata?.Color}}" name="Color" placeholder="Enter Product Color">
+        <input type="text" class="form-input" ngModel="{{productdata?.Category}}" name="Category" placeholder="Enter Product Category">
+        <textarea type="text" class="form-input" ngModel="{{productdata?.Description}}" name="Description" placeholder="Enter Product Description"></textarea>
+        <input type="text" class="form-input" ngModel="{{productdata?.Image}}" name="Image" placeholder="Enter Product Image URL">
+        <button (click)="submit(updateProduct.value)" class="form-button">Update product</button>
+    </form>
+</div>
+

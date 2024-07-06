@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+body{
+    font-family: sans-serif;
+}
+/* .container{
+    margin-left: 5%;
+    margin-left: 5%;
+} */
+.common-form {
+    text-align: center;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 300px;
+}
+
+.form-input {
+    height: 35px;
+    margin-bottom: 15px;
+    border: 1px solid blueviolet;
+    padding-left: 5px;
+    color: blueviolet;
+    /* border-radius: 2px; */
+}
+.form-button {
+    height: 35px;
+    margin-bottom: 15px;
+    border: 1px solid blueviolet;
+    padding-left: 5px;
+    color: blueviolet;
+    /* border-radius: 2px; */
+}
+.toster-success{
+    color: green;
+    text-align: center;
+}
+.pl-10{
+    padding-left: 10px;
+}
+.homeCarousel .carousel-caption{
+    background-color: rgb(0 0 0 / 58%);
+    border-radius: 5px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    border: 5px;
+    background-color: black;
+}
+.invalid-input{
+    color: red;
+    font-size: 12px;
+    margin-top: -15px;
+    display: flex;
+}
+button:disabled{
+    cursor: not-allowed;
+}
+.error-p{
+    color: red;
+    display: flex;
+}
+

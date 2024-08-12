@@ -1,0 +1,37 @@
+<div class="myorder">
+    <h1>My orders</h1>
+    <div class="row">
+        <div class="col-sm-2">
+            <span>Order</span>
+        </div>
+        <div class="col-sm-2">
+            <span>Order Id</span>
+        </div>
+        <div class="col-sm-2">
+            <span>Price</span>
+        </div>
+        <div class="col-sm-2">
+            <span>Status</span>
+        </div>
+        <div class="col-sm-2">
+            <span>Action</span>
+        </div>
+    </div>
+    <div class="row order-data" *ngFor="let myOrder of myOrders">
+        <div class="col-sm-2">
+            <img class="orderImg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALYAAACUCAMAAAAJSiMLAAAAY1BMVEX///8AAACPj4/8/Py2traYmJgYGBgcHBwTExOVlZWysrK7u7vq6uo7Ozv09PTd3d1dXV0hISHk5OR0dHTDw8POzs6srKxJSUkqKipDQ0NiYmJSUlJqamqioqIvLy97e3uFhYVfhS5XAAAFGUlEQVR4nO2aaXPiMAyGyUXuhISc5Pz/v3IlQxYfkMJ2a9MZPV+29XinrxxFl3M4EARBEARBEARBEARBEARBEARBEIRukvwvpWktrxO36Z3RtJpXSU4WT2xaz4tkoyD71xx3fT5tgOzCMa3nVbLkRjlYVlCblvM+Hhz3alrE+9Qg+5SZVvE2ZWtZ6e/zEmeF425Mq3ifBmSf8zL7NeHkSt7fI3jQ9cPlvNpT41Z1XQIQbDLEcT7MLOdi7RB06XAZl9X2pqaJ4qoCc2ooZNAas4bYe7JVO/wu7YfTZTwv62rb4QRPBqzJtcuuA4yB/Vy8JZ83pOi6dNKuG/Um7CfHycq8ruJmCjtYbNt0Brqi8I9BsC9+SHTLPsNfVQ4Lqy148k6WJcwSt5nsdVkgylv9ZRj6FKzxOVNG7SmrQinyIoZzV90LL4IfMUvqCmyJmmnyQrTF1qFUIMPTksMChnNP3QoPoZNzagblmF/9mLxnsBAonyzWKmdla4KlgOzFOWxNDURD94HEErUoO0vw5l72Yiwilx8T9xw8rlYS42BoU3aiMa28OMOiiWIMe8tOdk50eGUnus5FWsse7tSB9+D9S2FNCWqxpTYV6GJm2tH4CH9ZetPGR48e7ZOrXAx/+uMIgh2lHNcwcCujiLMqsYTH4mtPkXc5UghsHuVOMM+SxlgRBJezoa5uQp8VQ2/1KHB3amIy2R2VUE514pPGoDHI+9Sggf41G+tFW/YCOndYMB/4FSBjOYhfYbFFfxm1EWJA9kKOFXy2s0XQIWZPWMKxVmhKNTvbf6UwE/4Y35CtFCkawedv+cc7rAcIfAG250pxBTeZKKM2MN6lscuxwMpZWIkx4U+3nxkVNnQmZ1olHGUvhMBIfdlwpCLsMVdGbQIgUR4jfiUO5LIpU/I4mnb6cW17YDJf+YV6lrN2CUlyEFZawz5yVXni6w2csp2Es60LyZCkk71GOwl0lD5/ctg8tMK0yYX61uZLksZgGbWBkYOvidQuHQuuae+/mCD2peoCRQkJEBf4t9ZsGXUjwajMO7cy4ZHtiD/ARw4HHJfw/Ywn+YQje82jFlQ/7F6B+x37Fo97A/Ed7XPxd6Xh14+c8jBzL5wP5K0YIllFbtxHrjMGzgnKWbz7k/PPZLiM2pCuVh0wY+aSSXUU86j5FHmFzSDjaMOdWcEXRQ0jwkByuf0CTKbLqA0WAu81t38rwYMNLMA5LHWwZgTnvdsnORsZI35TdfoBcQTIwUuKRWjgw9B7zie8kIdrrwCJ0nkR03L/giEw/Bw5r4IZRf8N47dxMIXov4j+NlisjvaLhNGHfPsYzW8FwKBYPiAEJuPXSpXQbT4Int9XDbpNvwouUzG5DV51WL37jJiZV3huw76gUWb3emFRZEggaif27tPPsBQcctiYsSrQ7HFj5367T2efqz0dtuOUZ3MNFnm0yHsGXihsraMbiP2YAA5nt66G3XvrUPcUfr5QpzujBKwTt89H8K7K5Fj+Knsb3lTdF6e93n7Gbwd6o0UMP9CbrJ3vcVD2NtPE6GN2Ulyy1pGdHI4a/AefHN024u3YdYTJbqqiZxv1gHHNCqu8nnD+uzMBwfLWWmBjg5YGhgtdNt6xujZl/+4k7axl+ea28elT0UXN5ezd+W/CbfTMdxXlyIYMVtB/0ZJnl9s3mr3xs0aceB1Pl7X5OhJXNmxcpo/phLLkRSmw0bx/EARBEARBEARBEARBEARBEARBEP+FP0ENQir3mumjAAAAAElFTkSuQmCC" alt="">
+        </div>
+        <div class="col-sm-2">
+            <span>{{myOrder.id}}</span>
+        </div>
+        <div class="col-sm-2">
+            <span>{{myOrder.TotalPrice}}</span>
+        </div>
+        <div class="col-sm-2">
+            <span>In process</span>
+        </div>
+        <div class="col-sm-2">
+            <span><button class="form-button" (click)="cancelOrder(myOrder.id)" >Cancle Order</button></span>
+        </div>
+    </div>
+</div>

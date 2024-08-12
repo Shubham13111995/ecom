@@ -12,6 +12,7 @@ export class ProductDetailsComponent {
   productDetail:undefined|productData;
   cartvalue:number=1;
   itemInCart=false;
+  CurrrentProductCartData:undefined|productData;
   constructor(private activeRoute:ActivatedRoute,private product:ProductServiceService){};
   ngOnInit(){
     let productId=this.activeRoute.snapshot.paramMap.get('productId');
@@ -28,6 +29,19 @@ export class ProductDetailsComponent {
         this.itemInCart=false;
       }
     }
+    let userData=localStorage.getItem('user');
+    if(userData){
+      let userid =userData && JSON.parse(userData).id;
+      this.product.getCart(userid);
+      this.product.cartData.subscribe((result)=>{
+        let Cartitem = result.filter((item:productData)=>productId?.toString()===item.productId?.toString());
+        if(Cartitem.length){
+          this.CurrrentProductCartData=Cartitem[0];
+          this.itemInCart=true;
+        }
+    });
+    }
+
   }
   handleQuentity(param:string){
     if(param=='min' && this.cartvalue>1){
@@ -60,9 +74,20 @@ export class ProductDetailsComponent {
     }
   }
   removeFromCart(id:number){
-    this.product.localRemoveFromCart(id);
+    let userData=localStorage.getItem('user');
+    if (!userData) {
+      this.product.localRemoveFromCart(id);
+    } else {
+      let userid =userData && JSON.parse(userData).id;
+      let CartId=this.CurrrentProductCartData?.id;
+      this.CurrrentProductCartData && this.product.serverRemoveFromCart(this.CurrrentProductCartData.id)
+      .subscribe((result)=>{
+        if(result){
+          this.product.getCart(userid);
+        }
+      })
+    }
     this.itemInCart=false;
-    console.log('hii shubham');
     
   }
 }

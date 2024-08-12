@@ -28,9 +28,8 @@ export class HeaderComponent {
               let userData:any=localStorage.getItem('user');
               userData =localStorage.getItem('user') && JSON.parse(userData);
               this.menuType="user";
-              console.log(userData);
-              
               this.userName=userData.Name;
+              this.product.getCart(userData.id);
           } else {
             this.menuType='default'              
           }
@@ -46,7 +45,8 @@ export class HeaderComponent {
   }
   logOut(){
     localStorage.removeItem('seller');
-    this.route.navigate(['/'])
+    this.route.navigate(['/']);
+    this.product.cartData.emit([]);
   }
   logOutUser(){
     localStorage.removeItem('user');

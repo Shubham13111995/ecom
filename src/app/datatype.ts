@@ -15,7 +15,8 @@ export interface productData{
     Description:string,
     Image:string,
     id:number,
-    quantity:undefined| number
+    quantity:undefined| number,
+    productId:undefined|string
 }
 export interface cartDataType{
     Name:string,
@@ -28,4 +29,19 @@ export interface cartDataType{
     quantity:undefined| number,
     userid:number|string,
     productId:number|string
+}
+export interface cartSummery{
+    Price:number,
+    Discount:number,
+    Tax:number,
+    Delevery:number,
+    Total:number,
+}
+export interface checkoutDataType{
+    email:string,
+    address:string,
+    contact:string,
+    TotalPrice:number,
+    userId:string,
+    id:number|undefined
 }
